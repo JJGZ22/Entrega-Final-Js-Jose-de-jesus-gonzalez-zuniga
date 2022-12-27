@@ -21,7 +21,7 @@ papaprecio=parseInt(papaprecio)
 let bebidaprecio= 15
 bebidaprecio=parseInt(bebidaprecio)
 do{
-    orden=prompt("Bienvenido a WcDonalds! Que vas a ordenar?\n1-hamburguesa\n2-Papas\n3-Bebida\n4-Combo hamburguesa y bebida \n5-combo hamburguesa y papas\n6-Combo Bebida y papas\n7-Combo Completo\n8-Salir")
+    orden=prompt("Bienvenido a WcDonalds! Que vas a ordenar?\n1-Hamburguesa\n2-Papas\n3-Bebida\n4-Combo hamburguesa y bebida \n5-combo hamburguesa y papas\n6-Combo Bebida y papas\n7-Combo Completo\n8-Salir")
     orden=parseInt(orden)
     switch (orden) {
         case 1:alert("Una Deliciosa Hamburguesa ala Orden! El Total es "+ hamburprecio)
