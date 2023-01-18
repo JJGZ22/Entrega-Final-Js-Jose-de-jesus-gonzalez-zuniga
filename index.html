@@ -1,12 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/app1.js"></script>
-    <title>Document</title>
+    <title>Wcdonalds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+    <header class="container-fluid bg-danger position-sticky top-0">
+        <h1 class="text-warning "><img class="wcdonalds-logo" src="./img/wcdonalds.jpg" alt=""></h1>
+
+        <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
+            </li>
+
+        </ul>
+    </header>
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Orden Añadida al CARRITO!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Orden REMOVIDA!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">1
+        </div>
+
+        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab" tabindex="0">
+            <h2 class="h4 m-4 text-primary">Productos</h2>
+
+            <div class="row row-cols-sm-1 row-cols-md-2 row row-cols-lg-3 row row-cols-xl-4">
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Hamburgesa Clasica</h5>
+                        <img src="./img/burger.jpg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <p class="card-text text-white-50 descripcion">Deliciosa Hamburgesa de res de toda la vida
+                                acompañada de su bebida y papas ala francesa!.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$100</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary boton ">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Hamburgesa Rib-Eye</h5>
+                        <img src="./img/burger3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <p class="card-text text-white-50 descripcion">Las Hamburguesas de Ribeye están hechas con
+                                nuestra deliciosa e icónica carne Ribeye al 100%.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$100</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary boton ">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Hamburgesa Brava</h5>
+                        <img src="./img/burger5.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <p class="card-text text-white-50 descripcion">Imponenente Hamburguesa con tiras de tocino
+                                cebolla cambray champiñones y salsa BBQ! .</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$100</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary boton ">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Hamburgesa al Carbon</h5>
+                        <img src="./img/burger6.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <p class="card-text text-white-50 descripcion">Hamburguesa Asada al carbon con guacamole y
+                                chiles toreados asados para una explosion de sabor parrillero.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$100</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary boton ">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Hamburgesa de Helado</h5>
+                        <img src="./img/burger2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <p class="card-text text-white-50 descripcion">La "Gelato Burger" está hecha con una
+                                magdalena de chocolate, dos bochas de helado y salsa a elección.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$100</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary boton ">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Hamburgesa de Piña</h5>
+                        <img src="./img/burger4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <p class="card-text text-white-50 descripcion">Esta hamburguesa hawaiana es perfecta para
+                                los amantes de este delicioso platillo.
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">$100</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary boton ">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Hamburgesa de Camaron</h5>
+                        <img src="./img/burguer7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <p class="card-text text-white-50 descripcion">Las Hamburguesas de Camarón combinan
+                                mantequilla, ajo aromático y hojuelas de pimienta picantes.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$100</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary boton ">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Hamburgesa ala Portobello</h5>
+                        <img src="./img/burguer8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <p class="card-text text-white-50 descripcion">Esta hamburguesa de portobello es una de las
+                                recetas vegetarianas más populares y deliciosas.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$100</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary boton ">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <br>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Productos</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+                </tbody>
+            </table>
+            <br><br>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCartTotal">Total: 0</h3>
+                </div>
+                <div class="col d-flex justify content-end">
+                    <button class="btn btn-success">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="bg-danger p-3 mt-5">
+        <p class="text-center m-0 text-muted">Wcdonalds 2023-2023</p>
+
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/app2.js"></script>
 </body>
+
 </html>
