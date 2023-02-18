@@ -79,3 +79,15 @@ header, .alert{
     animation-name: tada;
     animation-duration: 0.7s;
   }
+  .swal-modal {
+    background-color: rgba(63,255,106,0.69);
+    border: 3px solid white;
+  }
+  .bicon{
+    width: 30px;
+  }
+  #map {
+    height: 300px;
+    width: 100%;
+  }
+  
